@@ -1,4 +1,4 @@
-## Getting Started
+## User Signup, Signin and Signout is implemented in NextJs and NodeJs using JsonWebToken
 
 First, run the development server:
 
@@ -9,7 +9,3 @@ yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-NextJs-NodeJs-Login-Registration (In development phase ......)
-
-User Signup, Signin and Signout is implemented in NextJs and NodeJs using JsonWebToken
