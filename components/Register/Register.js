@@ -7,8 +7,8 @@ import * as yup from "yup";
 import Link from 'next/link';
 import 'react-toastify/dist/ReactToastify.css';
 import styles from '../../styles/Login.module.css';
+import { toastError, toastSuccess } from '../../pages/constants';
 import registerAPI from '../../pages/api/register';
-// import { toastError, toastSuccess } from '../../pages/constants';
 
 const schema = yup.object({
   firstName: yup.string().required('Required').min(3).max(20),
@@ -28,9 +28,9 @@ function Register({ loader, setLoader } = props) {
     data = JSON.stringify(data);
     const response = await registerAPI(data);
     if (!response.success) {
-      // toastError(response.error);
+      toastError(response.error);
     } else {
-      // toastSuccess('User successfully created');
+      toastSuccess('User successfully created');
       reset({
         firstName: '',
         lastName: '',
