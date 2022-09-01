@@ -7,7 +7,7 @@ import * as yup from "yup";
 import Link from 'next/link';
 import 'react-toastify/dist/ReactToastify.css';
 import styles from '../../styles/Login.module.css';
-import { toastError, toastSuccess } from '../../pages/constants';
+import { toastError, toastSuccess } from '../../lib/constants';
 import registerAPI from '../../pages/api/register';
 
 const schema = yup.object({
