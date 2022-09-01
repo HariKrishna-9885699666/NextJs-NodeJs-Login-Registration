@@ -1,7 +1,7 @@
 import { BASE_URL } from '../../lib/constants';
 
-export default async function registerAPI (data) {
-    const response = await fetch(BASE_URL + '/register', {
+export default async function loginAPI (data) {
+    const response = await fetch(BASE_URL + '/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

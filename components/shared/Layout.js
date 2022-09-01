@@ -1,10 +1,22 @@
-function Layout({ ... props }) {
+import Link from 'next/link'
+import Router from 'next/router';
+
+function Layout({ isUserLoggedIn, children } = props) {
+    const logOut = () => {
+        localStorage.clear();
+        Router.push('/login');
+    };
     return (
-        <>  
+        <>
             <nav className="navbar navbar-light bg-light">
-                <span className="navbar-brand mb-0 h1 w-100 text-center">NextJS Signup, Signin, Logout features</span>
+                <div className="container-fluid">
+                    <a className="navbar-brand">NextJS Signup, Signin, Logout features</a>
+                    {isUserLoggedIn && (<Link href="/">
+                        <a onClick={(e) => logOut()}>Logout</a>
+                    </Link>)}
+                </div>
             </nav>
-            {props.children}
+            {children}
         </>
     );
 }

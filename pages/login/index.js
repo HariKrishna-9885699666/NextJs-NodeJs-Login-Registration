@@ -1,9 +1,9 @@
 import Login from '../../components/Login/Login';
 
-function LoginPage() {
+function LoginPage({...props}) {
   return (
     <>
-      <Login />
+      <Login {...props}/>
     </>
   )
 }

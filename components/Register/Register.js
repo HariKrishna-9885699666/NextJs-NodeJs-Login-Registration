@@ -6,7 +6,7 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from "yup";
 import Link from 'next/link';
 import 'react-toastify/dist/ReactToastify.css';
-import styles from '../../styles/Login.module.css';
+import styles from '../../styles/Pages.module.css';
 import { toastError, toastSuccess } from '../../lib/constants';
 import registerAPI from '../../pages/api/register';
 
