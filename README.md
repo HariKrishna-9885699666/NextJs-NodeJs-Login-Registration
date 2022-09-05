@@ -1,4 +1,4 @@
-## User Signup, Signin and Signout is implemented in NextJs and NodeJs using JsonWebToken
+## User Signup, Signin and Signout is implemented in NextJs and NodeJs (Express JS) using JsonWebToken
 
 First, run the development server:
 
