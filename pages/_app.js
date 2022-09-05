@@ -12,7 +12,7 @@ function MyApp({ Component, pageProps }) {
   const [isUserLoggedIn, setUserLoggedIn] = useState(false);
   const [userInfo, setUserInfo] = useState({});
   return <>
-    <Layout abcd="1234" isUserLoggedIn={isUserLoggedIn} userInfo={userInfo}>
+    <Layout isUserLoggedIn={isUserLoggedIn} userInfo={userInfo}>
       <ProtectedRoutes router={Router} isUserLoggedIn={isUserLoggedIn} setUserLoggedIn={setUserLoggedIn} userInfo={userInfo} setUserInfo={setUserInfo}>
         <Component {...pageProps} loader={loader} setLoader={setLoader} userInfo={userInfo}/>
       </ProtectedRoutes>
